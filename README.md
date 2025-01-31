@@ -8,6 +8,9 @@ This is a basic website containing just a few static webpages and a server creat
 ## How to create the app.
 This app can be created by using the following prompt on GitHub Copilot.
 
+> **RECOMMENDATION** 🚧  
+> For best results in project generation, use @workspace /new with the model: OpenAI O1 (Preview).
+
 ```
 @workspace /new I want you to build the structure of a new web project for a static website. The site consists of three main pages: Index, About, and Contact Us. The website is intended to display information about the solar system and is named "app". Therefore, you should include information about the planets that make up the solar system: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. In some parts, Pluto is recognized as a planet. Therefore, include information about Pluto as well. And don't forget to include the Sun and all its relevant information. This will go on the index page. On the about us page, state that we are a small group of astronomy enthusiasts with a mission to educate and share information about the planets. (In this part, as an AI model, you should generate rich and useful content). Finally, on the Contact Us page, create a contact form that collects the following information: First Name, Last Name, Email, Country, and a large text field for users to write their anecdotes.
 
