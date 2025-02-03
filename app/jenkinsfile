@@ -4,6 +4,9 @@ pipeline {
         REGISTRY_CREDENTIALS = 'dockerhub-credentials' // ID de credenciales en Jenkins
         DOCKER_IMAGE = 'macmoi/solar-system-app:latest'
     }
+    tools {
+        nodejs 'NodeJS-22-LTS' // Nombre de la configuración de NodeJS
+    }
     stages {
         stage('Install dependencies') {
             steps {
