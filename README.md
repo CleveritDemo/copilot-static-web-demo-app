@@ -5,6 +5,8 @@ This is a base demo applcation that can be used for demonstrations of basic with
 ## About the app:
 This is a basic website containing just a few static webpages and a server created with NodeJS by using ExpressJS Framework.
 
+![Preview of the app](./assets/preview.gif)
+
 ## How to create the app.
 This app can be created by using the following prompt on GitHub Copilot.
 
@@ -24,3 +26,38 @@ If you want to see the final version of this website, checkout to the `solved` b
 ```sh
 git checkout solved
 ```
+
+## How to run the app
+
+### Using NodeJS
+
+1. Navigate to the `app` directory:
+    ```sh
+    cd app
+    ```
+
+2. Install the dependencies:
+    ```sh
+    npm install
+    ```
+
+3. Start the application:
+    ```sh
+    npm start
+    ```
+
+The application will be available at `http://localhost:3000`.
+
+### Using Docker
+
+1. Build the Docker image:
+    ```sh
+    docker build -t copilot-app/solar-system-app:latest ./app
+    ```
+
+2. Run the Docker container:
+    ```sh
+    docker run -p 3000:3000 copilot-app/solar-system-app:latest
+    ```
+
+The application will be available at `http://localhost:3000`.
