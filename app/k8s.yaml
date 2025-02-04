@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: solar-system-app
+  template:
+    metadata:
+      labels:
+        app: solar-system-app
+    spec:
+      containers:
+      - name: solar-system-container
+        image: macmoi/solar-system-app:latest
+        ports:
+        - containerPort: 3000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-service
+spec:
+  selector:
+    app: solar-system-app
+  type: ClusterIP
+  ports:
+  - port: 3000
+    targetPort: 3000
